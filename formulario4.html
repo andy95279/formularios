@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario4</title>
+    <h1>Informacion sobre el producto</h1>
+</head>
+<body>
+    
+        Datos basicos
+            <br></br>
+            <label for=”name”> Nombre: </label>
+            <br/>
+            <input type="text" name="nombre"  id=”name” />
+            <br></br>
+            <label for="descripcion">Descripción</label> <br/>
+            <textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+         <br></br>
+            Foto <input type="file" name="adjunto" />
+            <br></br>
+       
+         <input name="conocimientos" type="checkbox" value="redes"/> Añadir contador de visitas 
+         <br></br>
+         
+         Datos economicos
+            <br/>
+         Precio
+         <input type="text" name="precio"  id=”precio” />€  
+         <label for="impuestos">Impuestos:</label>
+         
+         <select name="impuestos" id="impuestos">
+            <option value="4">4%</option>
+            <option value="7">7%</option>
+            <option value="16">16%</option>
+            <option value="25">25%</option>
+            </select>
+            <br></br>
+            Promocion
+            <br>
+         <input type="radio" name="Promocion" value="Ninguno" />
+         Ninguno
+         <br>
+         <input type="radio" name="Promocion" value="Transporte" /> 
+         Transporte gratuito
+         <br>
+         <input type="radio" name="Promocion" value="Descuento" /> 
+         Descuento 5%
+</body>
+</html>

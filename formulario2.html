@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+</head>
+<body>
+    <h1>Formulari de registre al Portal</h1>
+    <form action="control_form.php" method="get">
+      
+      Dades personals:
+      <fieldset>
+      
+        <label for="nombre">Nom:</label>
+        <input type="text" id="cognoms" name="nom">
+
+         <label for=”apellidos”> Cognoms: </label>
+         <input type="text" name="apellidos"  id=”apellidos” />
+        
+         <br><br/>
+         <label for=”DNI”> DNI: </label>
+         <input type="text" name="dni"  id=”dni” />
+         <br><br/>
+         <label for=”username”> Username: </label>
+         <input type="text" name="username"  id=”username”  />
+
+         Clau: 
+         <input type="password" name="contrasena" value=""/>
+         Repetir clau: 
+         <input type="password" name="contrasena" value=""/>
+         <br><br/>
+
+         <label for=”name”> E-Correu: </label>
+         <input type="text" name="nombre"  id=”name”/>
+         <label for="edad">Franja d'edat:</label>
+         <select name="edad" id="edad">
+           <option value="menor">menor de 16 anys</option>
+           <option value="mayor">major de 16 anys</option>
+         </select>
+         <br><br/>Sexe: 
+         <input type="radio" name="sexo" value="hombre" />
+         Home
+         <input type="radio" name="sexo" value="mujer" /> Dona
+         <br></br>
+         <label for="codigo">Codi País:</label>
+          <input type="text" id="codigo" name="codigo">
+          <label for="Zcodigo">Codi ZIP:</label>
+          <input type="text" id="Zcodigo" name="Zcodigo">
+
+          <br><br/> 
+          Imatge personal
+            <input type="file" name="adjunto" />
+        </fieldset>
+        <br></br>
+        Altres dades de interes
+        <fieldset>
+        Interessos: <br/>
+        <input name="intereses" type="checkbox" value="css"/> CSS
+        <input name="intereses" type="checkbox" value="HTML5"/>HTML5
+        <input name="intereses" type="checkbox" value="javascript"/> Javascript
+
+         <br><br/>
+         Coneixements: <br/>
+         <input name="conocimientos" type="checkbox" value="redes"/> Xarxes Socials
+         <input name="conocimientos" type="checkbox" value="HTML"/>Programació HTML
+         <input name="conocimientos" type="checkbox" value="CSS"/> Programacio CSS
+         <input name="conocimientos" type="checkbox" value="dieño"/> Disseny
+          <br><br/>
+        
+
+        <label for="comentarios">Comentaris</label> <br/>
+        <textarea id="comentarios" name="comentarios" cols="40" rows="5"></textarea>
+        </fieldset>
+        <input type="submit" name="enviar" value="Enviar" />
+        <input type="reset" name="borrar" value="Esborrar" />
+    </form>
+</body>
+</html>
